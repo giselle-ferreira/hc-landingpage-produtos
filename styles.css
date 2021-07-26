@@ -1,0 +1,552 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 5vh;
+  padding: 6.25rem 6.25rem 4rem 6.25rem;    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  background: url(https://wallpaperaccess.com/full/1556311.jpg);
+  background-repeat: repeat;
+}
+
+/* ---------- header ---------- */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.25rem 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+}
+
+/* ---------- logo ---------- */
+
+header .logo {
+  position: relative;
+  max-width: 6.25rem;
+  padding-top: 0.5rem;
+}
+
+/* ---------- menu ---------- */
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: #fff;
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-left: 2.5rem;
+  text-decoration: none;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  color: #f71963;
+}
+
+/* ---------- Content - Text ---------- */
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.content .text {
+  position: relative;
+  max-width: 37.5rem;
+  margin-top: 1.25rem;
+}
+
+.content .text h2 span{
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+.content .text h2 {
+  color: #6f6d6d;
+  font-size: .8rem;
+  line-height: 1.5em;
+  font-weight: 100;
+}
+
+span {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+.content .text p {
+  padding-top: 3rem;
+  padding-bottom: .5rem;
+  color: #6f6d6d;
+  font-size: 1rem;
+  line-height: 1.5em;
+  font-weight: 100;
+  max-width: 26.25rem;
+}
+
+/* ---------- Content - Form ---------- */
+
+.form {
+  display: flex;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+input {
+  border-radius: 0.5rem;;
+  width: 25rem;
+  height: 2.2rem;
+  margin-top: .3rem;
+ 
+}
+
+.button {
+  border-radius: 0.5rem;
+  width: 25rem;
+  height: 2rem;
+  position: relative;
+  margin-top: .4rem;
+  background-color: #f71963;
+  color: #ffffff;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  font: 200 1rem "Poppins", sans-serif;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #ffb2cc;
+}
+
+/* ---------- Image ---------- */
+.container {
+  border-top: 2rem;
+}
+
+.image {
+  display: flex;
+  width: 31.25rem;
+  justify-content: flex-end;
+  padding: 0 5rem;
+  -webkit-filter: drop-shadow(8px 8px 8px #000);
+  filter: drop-shadow(8px 8px 8px #000);
+  transition: transform 1s;
+  transform: translateX(0) scale(1);
+}
+
+.image:hover,
+.image:focus {
+ transform: translateX(.5rem) scale(1.2);
+}
+  
+
+/* ---------- Countdown ---------- */
+.container h1 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-top: 1rem;
+  font-weight: normal;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.container .countdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #fff;
+  font-weight: normal;
+}
+
+.text {
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin: 0.5rem 2rem;
+}
+
+.countdown-element {
+  text-align: center;
+}
+
+.countdown-element span {
+  font-size: 0.8rem;
+}
+
+/* ---------- Cards ---------- */
+
+.main-cards {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+ }
+
+.card-head {
+  letter-spacing: 0.2rem;
+  line-height: 1.90rem;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 4rem;  
+}
+
+.main-cards .card {
+  display: inline-block;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: .65rem;
+  align-items: center;
+  justify-content: center;
+  -webkit-filter: drop-shadow(8px 8px 8px #000);
+  filter: drop-shadow(8px 8px 8px #000);
+  transition: transform 1s;
+  transform: translateX(0) scale(1);
+}
+
+.main-cards .card:hover,
+.main-cards .card:focus {
+  transform: translateX(.3rem) scale(0.95);
+}
+
+.main-cards .card h3 {
+  font-weight: 700;
+  font-size: .95rem;
+  color: #353839;
+  padding-bottom: 1rem; 
+}
+
+.main-cards .card h3 span {
+  text-decoration: line-through;
+  font: 100 .75rem "Poppins", sans-serif;
+  color: #353839;
+}
+
+.main-cards .card .button-comprar {
+  padding: .5rem .8rem;
+  background-color: #f71963;
+  color: #ffffff;
+  border-radius: .75rem;
+  font: 100 .9rem "Poppins", sans-serif;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.card .button-comprar:hover {
+  background: #ffb2cc;
+}
+
+.main-cards .img-card img {
+  height: auto;
+  width: 15.65rem;
+}
+
+/* ---------- Social Media ---------- */
+
+.social-media .social {
+  position: absolute;
+  left: 50%;
+  top: 4rem;
+  justify-items: center;
+  align-items: center;
+  transform: translateX(-50%);
+}
+
+.social-media .social li {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.social-media li:hover {
+  transform: translateY(20px);
+}
+
+.social-media .social li img {
+  max-width: 2.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  height: 1.25rem;
+  bottom: 1.25rem;
+  padding-top: 1.25rem;
+}
+
+.footer p {
+  text-align: center;
+  color: #a9a9a9;
+  font-size: .75rem;
+  letter-spacing: .08rem;
+  padding-bottom: 1.5rem;
+}
+
+/* ---------- @Media ----------------------------------------------- */
+@media(max-width: 40rem){
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  section {
+  position: relative;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: url(https://i.postimg.cc/Nsw-31CNd/background.jpg);
+  background-repeat: repeat;
+  padding: 0;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  header .logo {
+    max-width: 5.5rem;
+    left: 1.5rem;
+  }
+
+  header ul {
+    display: none;
+  }
+
+   header ul li a {
+    font-size: 1rem;
+    margin: 1.5rem;
+  }
+
+  .toggle {
+    position: relative;
+    width: 1.3rem;
+    height: 1.3rem;
+    right: 1.5rem;
+    cursor: pointer;
+    background: url(assets/imagens/close.png);
+    background-size: 1.2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 11;
+  }
+
+  .toggle.active {
+    position: fixed;
+    right: 2.5rem;
+    background: url(assets/imagens/menu.png);
+    background-size: 1.2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+    header ul.navigation {
+    left: -100%;
+  }
+
+    header ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+    z-index: 10;
+  }
+
+   .container {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  section .container .image {
+    justify-content: center;
+    align-items: center;
+    max-width: 16rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+   }
+
+  .container .image img {
+    justify-content: center;
+    align-items: center;
+    max-width: 16rem;
+  }
+
+  section .content .container h1 {
+    justify-content: center;
+    margin: 0 1rem;
+  }
+  
+  .content {
+    padding-top: 5rem;
+  }
+  
+  .content .text {
+    max-width: 16rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content .text h2 {
+    max-width: 15rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content .text {
+    max-width: 16rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.1rem;
+  }
+
+  .container h1 {
+    padding-top: 1.5rem;
+    max-width: 16rem;
+    margin: 0;
+    align-items: center;
+  }
+    
+  section .container .countdown {
+    justify-content: center;
+    align-items: center;
+    max-width: 16rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+
+  .container .countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: normal;
+  } 
+  
+  .content .container .countdown .countdown-element p {
+    align-items: center !important;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;  
+  }
+
+  .countdown-element span {
+    font-size: 0.6rem;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+  
+  .text .form {
+    padding-bottom: 2.5rem;
+    max-width: 16rem;
+    justify-content: center;
+  }
+
+  .text input {
+    max-width: 16rem;
+    justify-content: center;
+    align-items: center;
+    font-size: .7rem;
+  }
+
+  .text .button {
+    max-width: 16rem;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+    border-radius: 0.7rem;
+  }
+
+  .main-cards  {
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .main-cards .card-head {
+    text-align: center;
+  }
+
+  .card-head {
+    font-size: .9rem;
+  }
+
+  .social-media .social {
+    left: 50%;
+    top: 2rem;
+    justify-items: center;
+    align-items: center;
+    /*transform: translateX(-50%);
+    transform: translateY(-120%);*/
+  }
+
+  .social-media .social li {
+    margin: 0 .35rem .5rem 0.35rem;
+  }
+
+  section {
+    background: none;
+  }
+
+  footer {
+    padding-top: 4.5rem;
+  }
+  
+  .footer p {
+    text-align: center;
+    align-items: center;
+    font-size: .6rem;
+    padding: 0 2rem 1.2rem 2rem;
+  }
+
+}

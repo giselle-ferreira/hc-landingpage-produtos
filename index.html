@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----------------- Script ------------------->
+    <script src="script.js" defer></script>
+
+    <!----------------- Axios ------------------->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!----------------- Styles ------------------->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!----------------- Fonts -------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>.shopYN</title>
+  </head>
+
+  <!----------------- Logo ------------------------>
+  <body>
+    <section>
+      <header>
+        <a href="#">
+          <img src="https://i.postimg.cc/TPKj0bmY/logo-shopyn.png" class="logo"
+        /></a>
+
+        <!----------------- Menu ------------------->
+        <div class="toggle active" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Catálogo</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Meus pedidos</a></li>
+        </ul>
+      </header>
+
+      <!----------------- Text ------------------->
+      <div class="content">
+        <div class="text">
+          <h2>
+            <span>FRETE GRÁTIS PARA TODO BRASIL!</span><br />*Válido para
+            compras acima de R$ 149,99
+          </h2>
+          <p>
+            INSCREVA-SE PARA RECEBER PROMOÇÕES E
+            <span>GANHE UM DESCONTO DE 10% NA SUA PRIMEIRA COMPRA</span>
+          </p>
+
+          <!----------------- Form ------------------->
+          <div class="form">
+            <form id="form">
+              <div>
+                <input
+                  type="text"
+                  placeholder=" Seu nome"
+                  name="nome"
+                  id="nome"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder=" Seu e-mail"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div>
+                <button class="button" type="submit" onclick="cadastrarEmail()">
+                  QUERO RECEBER MEU DESCONTO
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!----------------- Image ------------------->
+        <div class="container">
+          <div class="image">
+            <img
+              src="https://i.postimg.cc/Zqsy7nQF/black-friday-sign-2.png"
+              alt="Black Friday sign"
+            />
+          </div>
+
+          <!----------------- Countdown ------------------->
+          <h1>EM BREVE!</h1>
+          <div class="countdown">
+            <div class="countdown-element day-c">
+              <p class="text" id="day">00</p>
+              <span>DIAS</span>
+            </div>
+            <div class="countdown-element hour-c">
+              <p class="text" id="hour">00</p>
+              <span>HORAS</span>
+            </div>
+            <div class="countdown-element min-c">
+              <p class="text" id="min">00</p>
+              <span>MINUTOS</span>
+            </div>
+            <div class="countdown-element sec-c">
+              <p class="text" id="sec">00</p>
+              <span>SEGUNDOS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- Cards ------------------->
+    <div class="card-head">
+      <h2>OFERTAS DO DIA</h2>
+      <p>RESERVE A SUA</p>
+    </div>
+    <div class="main-cards">
+      <div class="card">
+        <div class="img-card">
+          <img src="assets/imagens/macacao.jpg" alt="Mulher veste macacão" />
+        </div>
+        <h3>&#9733;Macacão&nbsp;<span>de R$ 219,00 por</span>&nbsp;R$139,00</h3>
+        <button class="button-comprar" onclick="cadastrarProduto()" ;>
+          Quero reservar
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="img-card">
+          <img src="assets/imagens/jaqueta.jpg" alt="Mulher veste jaqueta" />
+        </div>
+        <h3>&#9733;Jaqueta&nbsp;<span>de R$ 179,00 por</span>&nbsp;R$119,00</h3>
+        <button class="button-comprar" onclick="cadastrarProduto()" ;>
+          Quero reservar
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="img-card">
+          <img src="assets/imagens/sobretudo.jpg" alt="Homem veste casaco" />
+        </div>
+        <h3>&#9733;Casaco&nbsp;<span>de R$ 269,00 por</span>&nbsp;R$189,00</h3>
+        <button class="button-comprar" onclick="cadastrarProduto()" ;>
+          Quero reservar
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="img-card">
+          <img
+            src="assets/imagens/blusamanga.jpg"
+            alt="Homem veste blusa de manga"
+          />
+        </div>
+        <h3>&#9733;Blusa&nbsp;<span>de R$ 149,00 por</span>&nbsp;R$109,00</h3>
+        <button class="button-comprar" onclick="cadastrarProduto()" ;>
+          Quero reservar
+        </button>
+      </div>
+    </div>
+
+    <!----------------- Social Media ------------------->
+    <section class="social-media">
+      <ul class="social">
+        <li>
+          <img src="https://i.postimg.cc/50k4c15f/instagram.png" /><a
+            href="https://instagram.com"
+          ></a>
+        </li>
+        <li>
+          <img src="https://i.postimg.cc/HxJxkVkr/twitter.png" /><a
+            href="https://twitter.com"
+          ></a>
+        </li>
+        <li>
+          <img src="https://i.postimg.cc/fMj3TdbQ/facebook.png" /><a
+            href="https://facebook.com"
+          ></a>
+        </li>
+      </ul>
+    </section>
+
+    <!----------------- Footer ------------------->
+    <footer class="footer">
+      <div>
+        <p>DESENVOLVIDO POR GISELLE FERREIRA PARA HIRING CODERS 2 - 2021</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "img": "assets/imagens/macacao.jpg",
+      "name": "Macacao",
+      "description": "Macacão feminino cinza",
+      "price": 139
+    },
+  
+    {
+      "id": 2,
+      "img": "assets/imagens/jaqueta.jpg",
+      "name": "Jaqueta",
+      "description": "Jaqueta jeans feminina",
+      "price": 119
+    },
+
+  {
+      "id": 3,
+      "img": "assets/imagens/sobretudo.jpg",
+      "name": "Sobretudo",
+      "description": "Sobretudo caramelo masculino",
+      "price": 189
+    },
+
+    {
+    "id": 4,
+    "img": "assets/imagens/blusamanga.jpg",
+    "name": "Blusa de botão",
+    "description": "Blusa de botão e manga comprida masculina",
+    "price": 109
+    }
+  ]
+    
+}
+
+
+ 
+
+
